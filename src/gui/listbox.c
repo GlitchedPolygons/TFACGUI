@@ -13,11 +13,11 @@
 #include "listbox.h"
 #include "listbox.inl"
 #include "cell.inl"
-#include "draw2d.inl"
 #include "drawctrl.inl"
 #include "view.h"
 #include "view.inl"
 #include "gui.inl"
+
 #include "arrpt.h"
 #include "arrst.h"
 #include "bmath.h"
@@ -25,7 +25,6 @@
 #include "color.h"
 #include "draw.h"
 #include "draw.inl"
-#include "dctx.h"
 #include "event.h"
 #include "font.h"
 #include "heap.h"
@@ -52,7 +51,6 @@ struct _pelem_t
 
 struct _ldata_t
 {
-    View *cview;
     Font *font;
     ArrSt(PElem) *elems;
     uint32_t mouse_ypos;
@@ -439,10 +437,6 @@ static void i_OnUp(ListBox *box, Event *e)
 
 static void i_update_sel_top(ListBox *box, LData *data, const uint32_t scroll_y)
 {
-    V2Df pos;
-
-    view_viewport((View*)box, &pos, NULL);
-
     if (data->multisel == FALSE || data->multisel_mode != ekMULTISEL_BURST)
         i_clean_select(data->elems);
 

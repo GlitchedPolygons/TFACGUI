@@ -45,7 +45,6 @@ enum _gievent_t
 typedef struct _line_t Line;
 typedef union _tag_t Tag;
 typedef struct _gui_component_t GuiComponent;
-typedef struct _colitem_t ColItem;
 typedef struct _evtransition_t EvTransition;
 typedef struct _evbind_t EvBind;
 
@@ -91,15 +90,6 @@ DeclPt(Cell);
 DeclPt(Layout);
 DeclPt(GuiComponent);
 DeclPt(MenuItem);
-
-struct _colitem_t
-{
-    op_t op;
-    uint32_t index;
-    const char_t *text;
-    align_t align;
-    real32_t width;
-};
 
 struct _evtransition_t
 {

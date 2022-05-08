@@ -464,7 +464,7 @@ void osscroll_content_size(OSScroll *scroll, const real32_t width, const real32_
     scroll->content_height = (int)height;
     scroll->line_width = (int)line_width;
     scroll->line_height = (int)line_height;
-    //i_update_bars(scroll);
+    i_update_bars(scroll);
 }
 
 /*---------------------------------------------------------------------------*/
