@@ -1,7 +1,7 @@
 #------------------------------------------
 # NAppGUI CMake build script
 #------------------------------------------
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 3.13)
 project(NAppGUI)
 
 # NAppGUI Build Scripts
@@ -38,5 +38,8 @@ desktopApp("DrawImg" "howto/drawimg" "" NRC_EMBEDDED)
 desktopApp("UrlImg" "howto/urlimg" "inet" NRC_EMBEDDED)
 
 
-# Your projects here!
+desktopApp("TFACGUI" "TFACGUI/" "" NRC_NONE)
 
+if (WIN32)
+  target_link_libraries(TFACGUI bcrypt)
+endif()

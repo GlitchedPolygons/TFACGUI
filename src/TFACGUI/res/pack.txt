@@ -1,0 +1,4 @@
+VENDOR=Glitched Polygons
+VERSION=1.0
+DESC=TOTP Generator GUI
+
