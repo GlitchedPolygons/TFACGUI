@@ -10,6 +10,8 @@ The GUI is written in plain C, using the awesome [NAppGUI SDK](https://github.co
 
 ---
 
+![TFACGUI Screenshot Windows](https://api.files.glitchedpolygons.com/api/v1/files/tfacgui-screenshot-win32.png)
+
 ### Usage
 
 Just copy and paste your 2FA secret into the GUI's text field and use the generated two-factor authentication code.
