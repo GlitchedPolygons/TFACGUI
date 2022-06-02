@@ -196,11 +196,7 @@ static void on_click_copy_totp(struct app_t* app, Event* e)
 
 static void on_click_label_footer(struct app_t* app, Event* e)
 {
-#ifdef _WIN32
-	ShellExecute(0, 0, L"https://glitchedpolygons.com", 0, 0, SW_SHOW);
-#else
-	system("open https://glitchedpolygons.com");
-#endif
+	osapp_open_url("https://glitchedpolygons.com");
 }
 
 static void on_close(struct app_t* app, Event* e)
