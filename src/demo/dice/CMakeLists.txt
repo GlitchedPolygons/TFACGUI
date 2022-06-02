@@ -1,1 +1,0 @@
-processDesktopApp(Dice "demo/casino")
