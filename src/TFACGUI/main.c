@@ -16,6 +16,7 @@
 
 #include "nappgui.h"
 #include <time.h>
+#include <ctype.h>
 
 #include "../lib/TFAC/src/tfac.c" // This includes windows.h
 #include "../lib/TFAC/src/base32.c"
