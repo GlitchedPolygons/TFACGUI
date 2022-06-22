@@ -30,3 +30,7 @@ This GUI is licensed under the Apache-2.0 license, but the underlying [NAppGUI](
 * * This readme file.
 * [README.nappgui.md](https://github.com/GlitchedPolygons/TFACGUI/blob/main/README.nappgui.md)
 * * The original [NAppGUI SDK's](https://github.com/frang75/nappgui_src) README.md
+
+It's also available for purchase on [glitchedpolygons.com](https://glitchedpolygons.com) (ships with some cool, additional stuff, PDF files/manual, etc...). 
+
+Please consider buying it from there to support the development of nifty tools like this :)
