@@ -62,11 +62,15 @@ static void on_change_totp_secret(struct app_t* app, Event* e)
 	char* c = params->text;
 	char new_totp_secret[64] = { 0x00 };
 
-	for (; c != NULL && i < 64 - 1; ++c, ++i)
+	for (; c != NULL && i < 64 - 1; ++c)
 	{
 		if (*c == '\0')
 		{
 			break;
+		}
+		else if (*c == ' ')
+		{
+			continue;
 		}
 
 		const char append = toupper(*c);
@@ -108,6 +112,7 @@ static void on_change_totp_secret(struct app_t* app, Event* e)
 			case '=':
 			{
 				new_totp_secret[i] = append;
+				++i;
 				break;
 			}
 		}
